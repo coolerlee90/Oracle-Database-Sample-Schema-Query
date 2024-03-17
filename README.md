@@ -4,7 +4,7 @@
 
 Confirmation the schemas have been successfully installed;
 
-3)	Query the installed schemas
+2)	Query the installed schemas
 
 From SQL Developer or SQL Plus, the SQL DML query and query results (i.e., result set) that successfully demonstrate:
 

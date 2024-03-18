@@ -1,3 +1,5 @@
+/*I chose to write the code in the CO schema.  First, I added one more row in the CUSTOMERS table. Then I use “JOIN” to join most of the tables together. Finally, I use FULL OUTER JOIN to join the CUSTOMERS table with others to get the results.*/
+
 INSERT INTO CUSTOMERS 
 VALUES ('393','ang.li@internalmail','Ang Li' );
 

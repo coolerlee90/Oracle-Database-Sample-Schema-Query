@@ -1,0 +1,20 @@
+/*I chose to write the code in the CO schema.  In general, the code tries to find out the customers with bigger customer id than average customers id ( the bigger customer id maybe means that this group customers are new registered customer or new customers with consume behavior) who bought “red” color product. 
+The first “Where” tries to find out the customer whose customer_id bigger than average customer_id. Then the second and third “Where”  is more like JOIN function to connect table CUSTOMER with TABLE ORDER and ORDER_ITEMS as well as find the rows they have in common based on order_id and product_id. The last “WHERE” tries to out the product_name with “red” in it.
+*/
+
+
+SELECT full_name, customer_id
+FROM CUSTOMERS
+WHERE customer_id IN (
+    SELECT customer_id
+    FROM ORDERS
+    WHERE order_id IN (
+        SELECT order_id
+        FROM ORDER_ITEMS
+        WHERE product_id IN (
+            SELECT product_id
+            FROM PRODUCTS
+            WHERE lower(product_name) LIKE '%red%'
+        )
+    )
+);

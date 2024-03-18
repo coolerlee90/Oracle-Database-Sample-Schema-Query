@@ -1,5 +1,9 @@
 # Oracle-Database-Sample-Schema-Query
 
+SQL project in Fall semester (Sep-Dec) 2023
+
+Thanks to professor Jim Myronic guidance
+
 1)	Install the Oracle sample schemas
 
 Confirmation the schemas have been successfully installed;
